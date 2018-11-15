@@ -9,6 +9,7 @@ class DepartmentsController < ApplicationController
 
   def new
     @department = Department.all
+    render partial: "form"
   end
 
   def edit
